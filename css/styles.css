@@ -105,7 +105,7 @@ img {
     letter-spacing: 0.02em;
     padding: 24px 0;
     color: var(--navy);
-    position: relative;
+   
 
 }
 .header-nav-item:hover {
@@ -116,8 +116,9 @@ img {
     color: var(--ocean);
 }
 .header-active-link {
-    /* position: relative; */
-    
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
     
 }
 .header-active-link::after {
