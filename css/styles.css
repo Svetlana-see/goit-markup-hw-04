@@ -271,7 +271,7 @@ img {
 }
 .team-list {
     width: calc((100% - 3 * 24px) / 4);
-    height: 380px;
+    /* height: 380px; */
     border: 1px solid var(--accent);
     border-radius: 0 0 4px 4px;
     background-color: #FFFFFF;
@@ -280,11 +280,20 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list-icon {
-    padding-bottom: 32px;
+    width: 264px;
+        height: 260px;
+    margin-bottom: 32px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .container-team {
-    padding: 32px 0;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+    width: 232px;
+    /* height: 104px; */
+    /* padding: 32px 0; */
 }
 .team .team-designer .team-list-people {
     font-weight: 500;
@@ -305,6 +314,7 @@ img {
 .team-icon {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 
 }
@@ -314,14 +324,13 @@ img {
 }
 .team-icon-link-adr {
     width: 100%;
-    height: 100%;
-    background-color: var(--iris);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
+        height: 100%;
+        background-color: var(--iris);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 .team-icon-link-adr:hover {
     background-color: #404bbf;
 }
@@ -330,6 +339,9 @@ img {
 }
 .team-icon-link-net {
     fill: var(--cloud);
+    stroke: var(--cloud);
+
+
 }
 /* main our portfolio */
 .portfolio .portfolio-logo {
@@ -386,9 +398,6 @@ img {
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-      
-   
 }
 .container-description {
     padding: 32px 16px;
@@ -491,7 +500,7 @@ img {
 }
 
 .footer-icon-net {
-    /* fill: var(--cloud); */
+    fill: var(--cloud);
     stroke: var(--cloud);
 }
 
